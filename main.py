@@ -3,7 +3,7 @@ from tkinter import ttk
 import openpyxl
 
 def load_data():
-	path = "G:\Python Projects\Modern DataEntry\people.xlsx"
+	path = "F:\TkinterProjects\ModernDataEntry\people.xlsx"
 	workbook = openpyxl.load_workbook(path)
 	sheet = workbook.active
 
@@ -22,7 +22,7 @@ def insert_row():
 
 	print(name, age, subscription_status, employment_status)
 
-	path = "G:\Python Projects\Modern DataEntry\people.xlsx"
+	path = "F:\TkinterProjects\ModernDataEntry\people.xlsx"
 	workbook = openpyxl.load_workbook(path)
 	sheet = workbook.active
 	row_values = [name, age, subscription_status, employment_status]
