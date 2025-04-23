@@ -3,7 +3,7 @@ from tkinter import ttk
 import openpyxl
 
 def load_data():
-	path = "G:\Python Projects\Modern DataEntry\people.xlsx"
+	path = "F:\TKinterProjects\ModernDataEntry\people.xlsx"
 	workbook = openpyxl.load_workbook(path)
 	sheet = workbook.active
 
@@ -22,7 +22,7 @@ def insert_row():
 
 	print(name, age, subscription_status, employment_status)
 
-	path = "G:\Python Projects\Modern DataEntry\people.xlsx"
+	path = "F:\TKinterProjects\ModernDataEntry\people.xlsx"
 	workbook = openpyxl.load_workbook(path)
 	sheet = workbook.active
 	row_values = [name, age, subscription_status, employment_status]
@@ -52,7 +52,7 @@ root.tk.call("source", "forest-dark.tcl")
 style.theme_use("forest-dark")
 
 
-combo_list = ["Subscribed", "Not Subscribed", "Other"]
+combo_list = ["Subscribed", "Not Subscribed", "Others"]
 
 
 frame = ttk.Frame(root)
@@ -105,6 +105,5 @@ treeview.pack()
 treeScroll.config(command=treeview.yview)
 
 load_data()
-
 
 root.mainloop()
